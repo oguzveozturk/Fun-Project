@@ -11,6 +11,7 @@
 		F483C1EC2763C075002F4EB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483C1EB2763C075002F4EB9 /* ContentView.swift */; };
 		F483C1EE2763C076002F4EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F483C1ED2763C076002F4EB9 /* Assets.xcassets */; };
 		F483C1F12763C076002F4EB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F483C1F02763C076002F4EB9 /* Preview Assets.xcassets */; };
+		F483C2052763D114002F4EB9 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = F483C2042763D114002F4EB9 /* NukeUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F483C2052763D114002F4EB9 /* NukeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Fun Project";
+			packageProductDependencies = (
+				F483C2042763D114002F4EB9 /* NukeUI */,
+			);
 			productName = "Fun Project";
 			productReference = F483C1E62763C075002F4EB9 /* Fun Project.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = F483C1DD2763C075002F4EB9;
+			packageReferences = (
+				F483C2032763D114002F4EB9 /* XCRemoteSwiftPackageReference "NukeUI" */,
+			);
 			productRefGroup = F483C1E72763C075002F4EB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -196,7 +204,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F483C2032763D114002F4EB9 /* XCRemoteSwiftPackageReference "NukeUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/NukeUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F483C2042763D114002F4EB9 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F483C2032763D114002F4EB9 /* XCRemoteSwiftPackageReference "NukeUI" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F483C1DE2763C075002F4EB9 /* Project object */;
 }
